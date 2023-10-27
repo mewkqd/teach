@@ -1,0 +1,47 @@
+ *
+ {
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    background-color: rgb(4, 54, 95);
+    color: silver;
+}
+.item {
+    padding: 20px;
+    border: 1px solid ;
+    border-end-start-radius:8px;
+    /* margin: 10px; */
+}
+
+/*
+    width
+    height
+    border
+    padding
+    margin
+*/
+.contanier {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 70px 1fr;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.item1 {
+    background-color: lightcyan;
+    color:crimson;
+    grid-row:1 / span 3 ;
+}
+.item2 {
+    color: lightgoldenrodyellow;
+    grid-column: 2 / span 2;
+}
+
+.item:last-child {
+    grid-column: 1 / span 3;
+    background-color: #222 ;
+}
